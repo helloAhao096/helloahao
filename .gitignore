@@ -1,0 +1,18 @@
+# Node modules
+node_modules/
+
+# Dist files
+dist/
+lib/
+
+# Test coverage files
+
+# MacOS Desktop Services Store
+.DS_Store
+
+# Log files
+*.log
+
+# IDE setting files
+.idea
+.vscode
