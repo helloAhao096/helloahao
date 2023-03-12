@@ -1,18 +1,13 @@
 name: Deploy
+
 on:
-  workflow_dispatch: {}
   push:
     branches:
       - master
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v3
         with:
@@ -22,12 +17,53 @@ jobs:
           node-version: 16
           cache: npm
       - run: npm install --frozen-lockfile
+
       - name: Build
-        run: npm run docs:build
-      - uses: actions/configure-pages@v2
-      - uses: actions/upload-pages-artifact@v1
-        with:
-          path: docs/.vitepress/dist
+        run: npm docs:build
+
       - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v1
+        # 将构建产物 commit 到一个分支上，用于发布静态站点资源
+        # https://github.com/peaceiris/actions-gh-pages
+        uses: helloahao096/actions-gh-pages@v3
+        with:
+          # Github 会在 workflow 中自动生成 GIHUBT_TOKEN，用于认证 workflow 的运行
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # 静态资源目录设置
+          publish_dir: docs/.vitepress/dist
+          # 默认发布到 gh-pages 分支上，可以指定特定的发布分支（不能选拉取代码的分支）
+          publish_branch: gh-pages
+          full_commit_message: ${{ github.event.head_commit.message }}
+#
+#name: Deploy
+#on:
+#  workflow_dispatch: {}
+#  push:
+#    branches:
+#      - master
+#jobs:
+#  deploy:
+#    runs-on: ubuntu-latest
+#    permissions:
+#      pages: write
+#      id-token: write
+#    environment:
+#      name: github-pages
+#      url: ${{ steps.deployment.outputs.page_url }}
+#    steps:
+#      - uses: actions/checkout@v3
+#        with:
+#          fetch-depth: 0
+#      - uses: actions/setup-node@v3
+#        with:
+#          node-version: 16
+#          cache: npm
+#      - run: npm install --frozen-lockfile
+#      - name: Build
+#        run: npm run docs:build
+#      - uses: actions/configure-pages@v2
+#      - uses: actions/upload-pages-artifact@v1
+#        with:
+#          path: docs/.vitepress/dist
+#      - name: Deploy
+#        id: deployment
+#        uses: actions/deploy-pages@v1
