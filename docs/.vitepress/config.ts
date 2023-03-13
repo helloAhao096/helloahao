@@ -5,7 +5,7 @@ async function config() {
     return {
         lang: "en-US",
         title: "Ahao",
-        base:"/",
+        base:".",
         description: "Home of Ahao",
         appearance: 'dark',
         // editLinks: true,
