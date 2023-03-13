@@ -11,12 +11,11 @@ export default {
   Layout: MyLayout,
   enhanceApp(ctx) {
     DefaultTheme.enhanceApp(ctx);
-    const pinia = createPinia();
     const { app } = ctx;
+    const pinia = createPinia();
     app.use(pinia)
     // register global components
     app.component("Archives", Archives);
     app.component("Tags", Tags);
-    // app.route("resume",)
   },
 };

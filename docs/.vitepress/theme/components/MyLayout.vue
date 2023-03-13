@@ -25,6 +25,7 @@
   </Layout>
 
   <CopyWright/>
+  <MouseEvent/>
 </template>
 <script lang="ts" setup>
 
@@ -37,18 +38,7 @@ import Comments from "./Comments.vue";
 import Page from "./Page.vue";
 import Category from "./Category.vue";
 import Title from "./Title.vue";
-import * as CursorEffects from "cursor-effects";
-
-new CursorEffects.rainbowCursor({
-  length: 8,
-  colors: [  "#FE0000",
-    "#FD8C00",
-    "#FFE500",
-    "#119F0B",
-    "#0644B3",
-    "#C22EDC",],
-  size: 3,
-})
+import MouseEvent from "./MouseEvent.vue";
 
 </script>
 <style scoped></style>
