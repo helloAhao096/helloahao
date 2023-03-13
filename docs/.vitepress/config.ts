@@ -5,7 +5,7 @@ async function config() {
     return {
         lang: "en-US",
         title: "Ahao",
-        // base:"/",
+        base:"/",
         description: "Home of Ahao",
         appearance: 'dark',
         // editLinks: true,
@@ -35,17 +35,14 @@ async function config() {
                 {
                     text: "🏡Blogs",
                     link: "/",
-                    activeMatch:"/"
                 },
                 {
                     text: "🔖Tags",
                     link: "/tags",
-                    activeMatch: "/tags"
                 },
                 {
                     text: "📃Archives",
                     link: "/archives",
-                    activeMatch: "/archives"
                 },
                 {
                     text: '🛠️custom',
