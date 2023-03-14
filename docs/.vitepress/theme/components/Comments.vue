@@ -13,7 +13,7 @@ const gitalk = new Gitalk({
   clientID: "53f859bc548f68175265",
   clientSecret: "73f528b5f57c8ca681785d711ee9904f197671ec",
   repo: "blog-comments",
-  owner: "helloahao096",
+  owner: "helloahao",
   admin: ["helloahao096"],
   id: location.pathname.substring(0, 50), // Ensure uniqueness and length less than 50
   language: "zh-CN",
