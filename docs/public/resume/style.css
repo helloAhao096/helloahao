@@ -37,12 +37,21 @@ body {
 
 .resume-header{
     display: flex;
-    /*flex: .5;*/
+    justify-content: center;
+    align-items: center;
 }
 
-.resume-info{
-    /*flex: .5;*/
-    flex-grow: 1.5;
+.resume-info-left{
+    /*flex-grow: ;*/
+    flex-shrink: 0;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.resume-info-right {
+    /*flex-grow: 0.3;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,9 +59,7 @@ body {
 }
 /* 个人照片*/
 #zzw {
-    width: 10%;
-    height: 10%;
-    flex-grow: .5;
+    width: 40%;
 }
 
 .resume-info--layout {
@@ -77,17 +84,17 @@ body {
 }
 
 .resume-introduce {
-    margin-top: 1rem;
+   margin-top: .5rem;
 }
 .introduce {
     display: flex;
     justify-content: space-between;
-    margin-bottom: .5rem;
+    margin: 0.1rem 0;
 }
 
 .introduce-sub {
     display: flex;
-    margin-bottom: .5rem;
+    margin-left: 1rem;
 }
 
 .speciality {
@@ -96,16 +103,20 @@ body {
     padding-right: .5rem
 }
 .splitLine {
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
 }
 
 .splitLine-short {
-    margin: 1rem 20%;
+    margin: .5rem 20%;
 }
 
 ul {
-    margin: 1rem;
+    /*margin: 1rem;*/
 }
-p {
-    margin-bottom: .5rem;
+ol {
+    margin-left: 2rem;
+}
+
+.resume-skill > ul {
+    margin-left: 2rem;
 }

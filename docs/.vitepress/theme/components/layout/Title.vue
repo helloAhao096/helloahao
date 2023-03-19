@@ -31,7 +31,6 @@
     </a>
   </div>
 
-
   <div class="date">🕒 Published at: {{ publishDate }}</div>
 
 <!--   <div class="description">{{ description }}</div>-->
@@ -40,7 +39,7 @@
 import { useData } from "vitepress";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
-import {useTagStore} from "../store";
+import {useTagStore} from "../../store";
 
 const emits = defineEmits(["changeTag"])
 type pageData = {

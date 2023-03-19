@@ -15,7 +15,7 @@
   </footer>
 </template>
 <script lang="ts" setup>
-import Counter from "./Counter.vue";
+import Counter from "../effect/Counter.vue";
 
 const date = new Date().getFullYear();
 </script>

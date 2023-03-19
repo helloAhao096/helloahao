@@ -1,7 +1,7 @@
 import DefaultTheme from "vitepress/theme";
 import Archives from "./components/Archives.vue";
 import Tags from "./components/Tags.vue";
-import MyLayout from "./components/MyLayout.vue";
+import MyLayout from "./MyLayout.vue";
 import "./custom.css";
 import {createPinia} from "pinia";
 

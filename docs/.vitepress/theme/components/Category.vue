@@ -45,18 +45,23 @@ ul {
 @media (min-width: 768px) {
   .category {
     max-height: 400px;
+    margin-bottom: 1rem;
+
   }
 }
 @media (min-width: 1024px) {
   .category {
     max-height: 450px;
+    margin-bottom: 1rem;
+
   }
 }
 @media (min-width: 1400px) {
   .category {
-    position: fixed;
-    right: 20px;
+    /*position: fixed;*/
+    /*right: 20px;*/
     max-height: 490px;
+    margin-bottom: 1rem;
   }
 }
 </style>

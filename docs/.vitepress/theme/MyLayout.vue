@@ -32,13 +32,13 @@
 import DefaultTheme from "vitepress/theme";
 
 const {Layout} = DefaultTheme;
-import HomeHero from "./HomeHero.vue";
-import CopyWright from "./CopyWright.vue";
-import Comments from "./Comments.vue";
-import Page from "./Page.vue";
-import Category from "./Category.vue";
-import Title from "./Title.vue";
-import MouseEvent from "./MouseEvent.vue";
+import HomeHero from "./components/layout/HomeHero.vue";
+import CopyWright from "./components/layout/CopyWright.vue";
+import Comments from "./components/plugin/Comments.vue";
+import Page from "./components/layout/Page.vue";
+import Category from "./components/Category.vue";
+import Title from "./components/layout/Title.vue";
+import MouseEvent from "./components/effect/MouseEvent.vue";
 
 </script>
 <style scoped></style>
