@@ -8,32 +8,136 @@
 <body>
 
 <div class="resume">
-
     <div class="resume-header">
-
-        <div class="resume-info">
+        <div class="resume-info-left">
             <h1 class="resume-name">张智伟</h1>
-
-            <b>求职意向：软件开发工程师</b>
-
             <div class="resume-info--layout resume-contact">
                 <div class="resume-info--layout-sub">手机：13013636500</div>
                 <div>邮箱：helloahao@icloud.com</div>
             </div>
-            <div>个人博客：helloqianfan.github.io/custom/resume/</div>
+            <div>个人博客：helloahao096.github.io/helloahao/</div>
             <div>城市：江苏省 无锡市</div>
             <div>民族：汉族</div>
-            <div>年龄：22岁</div>
+            <div>年龄：24岁</div>
             <div>性别：男</div>
         </div>
-        <img id="zzw" src="static/张智伟.jpg" alt="张智伟">
+        <div class="resume-info-right">
+            <img id="zzw" src="static/张智伟.jpg" alt="张智伟">
+            <div>求职意向：软件开发工程师</div>
+            <div>四年编码经验/两年生产经验</div>
+            <div>期望薪资：7-8k</div>
+        </div>
     </div>
-
-
     <div class="resume-content">
-
-
         <div class="resume-introduce resume-schooling">
+            <div class="workExperience resume-introduce">
+                <b>工作经历</b>
+                <hr class="splitLine">
+                <div class="introduce">
+                    <b>
+                        无锡沃爱思科技有限公司
+                    </b>
+                    <div>
+                        2021.7-2022.12
+                    </div>
+                </div>
+                <div class="introduce-sub">
+                    前端开发工程师
+                    (vue3/ts/pinia/vite/vue-router/nuxt.js)
+                </div>
+                <ul style="margin-left: 1rem">
+                    <li>
+                        <b>
+                            Neumix (知识图谱平台)
+                        </b>
+                    </li>
+                </ul>
+                <ol>
+                    <li>使用vite打包工具，即开即用，相比webpack极大的省去了编译时间</li>
+                    <li>使用vue3新特性setup语法，组合式api和ts，帮助公司简化代码繁琐语法</li>
+                    <li>使用vue3绘制前端页面，通过G6图可视化引擎渲染后台数据生成知识图谱树</li>
+                    <li>通过nuxtjs将网页服务端渲染，帮助公司优化SEO搜索</li>
+                    <li>使用pinia管理全局状态，不需要像Vuex一样繁琐的操作mutation</li>
+                </ol>
+            </div>
+            <hr class="splitLine-short"/>
+            <div class="introduce">
+                <b>
+                    无锡忆同文正科技有限公司
+                </b>
+                <div>
+                    2020.4-2021.6
+                </div>
+            </div>
+
+            <div class="introduce-sub">
+                Java开发工程师(Spring Boot/Mybatis/MySQL/Redis)
+            </div>
+            <ul style="margin-left: 1rem">
+            <li>
+                <b>
+                    蓝英平台
+                </b>
+            </li>
+            </ul>
+            <ol>
+                <li>用户登录：使用 Redis 对用户信息进行缓存，减轻对数据库查
+                    询的压力，传输账号密码信息时，使用 MD5,RSA 进行加密,验证码短信登录（使用阿里云短信服务）
+                </li>
+                <li>用户权限：使用 SpringSecurity 对各等级人员进行权限限制</li>
+                <li>
+                    中介订单接单模块（订单多维度查询，根据中介所在地区自动区分出周边相关订单，根据薪资劳务报酬，返利等进行排序)
+                </li>
+                <li>配置 swagger 生成统一接口文档与后端对接</li>
+            </ol>
+
+            <div class="resume-skill">
+
+            <b>技能</b>
+            <hr class="splitLine">
+            <div class="introduce">
+                <b>vue3/vite/nuxtjs/pinia</b>
+            </div>
+            <ul>
+                <li>
+                    对vue3的语法，组合式api和生命周期有一定的理解，习惯使用vite创建项目，相比于webpack，启动十分迅速，使用nuxtjs在服务端生成静态网页，方便百度进行SEO
+                </li>
+            </ul>
+            <div class="introduce">
+                <b>Python3/pip3/ffmpeg</b>
+            </div>
+            <ul>
+            <li>
+                使用python对工作上的数据进行清洗，筛选，配合ffmpeg对视频图片进行切图分割，编写脚本
+            </li>
+            <li>模块化/标准化机器人通用组件，根据业务需求创建出不同的组合，打包成docker镜像进行微服务运行</li>
+            <li>搭建harbor镜像容器仓库，制作docker镜像，编写shell一键部署脚本文件</li>
+            </ul>
+
+            <div class="introduce">
+                <b>Linux(Centos/ubuntu)</b>
+            </div>
+            <ul>
+            <li>熟练使用linux系统进行项目文件的部署，并且会编写bash语言将重复操作简单化</li>
+            <li>装载nvidia驱动使用cuda进行模型训练</li>
+            <li>制作docker镜像模型，使用harbor容器进行版本迭代更新</li>
+            </ul>
+            <div class="introduce">
+                <b>
+                    编程习惯
+                </b>
+            </div>
+                <ul>
+
+            <li>有良好的代码变量命名规范，对函数的缩减和格式也有要求，并且会在每个有作用的函数前备上注释</li>
+            <li>编程软件：使用JetBrain全家桶，自己有正版软件账号</li>
+            <li>资料搜索网站：Google/stackoverflow</li>
+            <li>自己使用v2ray搭建了vpn，习惯在google搜索并且查阅
+                资料，工作中遇到困难会及时在网络上进行关键词查找相应的答案，在工作上遇到不清楚的需求或者不懂的问题会及时请教前辈
+            </li>
+                </ul>
+            </div>
+
             <b>教育背景</b>
             <hr class="splitLine">
             <div class="introduce">
@@ -69,104 +173,17 @@
                 </div>
             </div>
         </div>
-
-        <div class="workExperience resume-introduce">
-            <b>工作经历</b>
-            <hr class="splitLine">
-            <div class="introduce">
-                <b>
-                    无锡沃爱思科技有限公司
-                </b>
-                <div>
-                    2020.4-2021.6
-                </div>
-            </div>
-
-            <div class="introduce-sub">
-                Java开发工程师(项目后台开发)/Python脚本开发(图片&数据清洗,训练模型)
-            </div>
-            <div class="introduce">
-                <b>
-                    Neumix (知识图谱平台)
-                </b>
-            </div>
-            <ul>
-                <li>帮助公司解决数据清洗的痛点，通过yolov5标定图片，人员审查复核，极大的降低了人工成本</li>
-                <li>
-                    通过将各个模块化的组件，根据不同的业务体系，组合配置流程图帮助加工企业识别零件瑕疵，挑选出合格的产品
-                </li>
-                <li>
-                    自研的知识图谱平台，模块化/标准化机器人通用组件，根据不同的业务需求创建出不同的组合，可以打包成docker镜像进行微服务运行
-                </li>
-                <li>熟练使用java的SpringBoot，Mybatis搭建后台</li>
-                <li>使用Python编写数据过滤，筛选图片脚本</li>
-                <li>搭建harbor镜像容器仓库，制作docker镜像，编写shell一键部署脚本文件</li>
-            </ul>
-        </div>
-
-        <b>技能</b>
-        <hr class="splitLine">
-        <div class="introduce">
-            <b>
-                vue3/ts/pinia/vue-router
-            </b>
-        </div>
-        <li>会使用vue3的新特性&lt;script-setup&gt;构建项目，对vue的生命周期也有完全的理解。在新的vue3框架中，主要修改了props和emit的取值方法，熟练使用强类型typescript，在项目中根据compositionApi配合pinia管理通用的全局状态，使用vue-router将vue模块页面进行映射
-        </li>
-        <div class="introduce">
-            <b>
-                html5/css3/js/flex布局
-            </b>
-        </div>
-        <li>对于html5和css3有清晰的认识，熟悉html的dom树，能够使用js操作，对于节点的prototype也有一定的认知，自己的学习过程中都是用纯原生js进行网页的编写，基础扎实
-            ，因为以前是编写后端语言的，所以对后端的接口数据，传参，接口校验有清楚的认知，对post/get请求也十分了解。熟练使用flex布局设计页面
-        </li>
-
-        <div class="introduce">
-            <b>Java/MYSQL/Mybatis/Redis/Gradle/swagger</b>
-        </div>
-
-        <li>熟练掌握java编程语言，会使用Spring Boot框架和Mybatis持久层进行网络开发，并且会使用jdbc连接Mysql数据库，</li>
-        <li>使用Redis，NoSQL非关系型数据库，持久化存储，优化运行效率</li>
-        <li>使用swagger配合生成接口文档</li>
-        <div class="introduce">
-            <b>Python3/pip3/ffmpeg</b>
-        </div>
-        <li>使用python对工作上的数据进行清洗，筛选，配合ffmpeg对视频图片进行切图分割，编写脚本，配合使用fastAPI编写后端接口</li>
-        <div class="introduce">
-            <b>Linux(Centos/ubuntu)</b>
-        </div>
-        <li>熟练使用linux系统进行项目文件的部署，并且会编写bash语言将重复操作简单化</li>
-        <li>装载nvidia驱动使用cuda进行模型训练</li>
-        <li>制作docker镜像模型，使用harbor容器进行版本迭代更新</li>
-        <li>编程习惯</li>
-        <li>有良好的代码变量命名规范，对函数的缩减和格式也有要求，并且会在每个有作用的函数前备上注释</li>
-        <li>编程软件：使用JetBrain全家桶，自己有正版软件账号</li>
-        <li>资料搜索网站：Google/stackoverflow</li>
-        <li>自己使用v2ray搭建了vpn，习惯在google搜索并且查阅
-            资料，工作中遇到困难会及时在网络上进行关键词查找相应的答案，在工作上遇到不清楚的需求或者不懂的问题会及时请教前辈</li>
-        <hr class="splitLine-short"/>
         <div class="resume-introduce">
             <b>自我评价</b>
             <hr class="splitLine">
-            <p>四年代码编写经验，三年实际开发经验，在项目中帮助公司优化代码冗余，模块分类，函数式编程，熟练使用jetBrain开发工具，使用stackoverflow精准查找技术问题并且解决项目中遇到的困难，使代码开发效率大大提高</p>
-            <p>具有编程思维和代码规范意识，喜欢探索新鲜事物，乐于学习并使用新的技术，性格开朗、稳重、意志力坚强，待人诚恳，思想积极向上;工作严谨细致、条理分析有计划;工作重效率、责任心强、处事冷静。</p>
-
+            <p>
+                四年代码编写经验，两年实际开发经验，在项目中帮助公司优化代码冗余，模块分类，函数式编程，熟练使用jetBrain开发工具，使用stackoverflow精准查找技术问题并且解决项目中遇到的困难，使代码开发效率大大提高</p>
+            <p>
+                具有编程思维和代码规范意识，喜欢探索新鲜事物，乐于学习并使用新的技术，性格开朗、稳重、意志力坚强，待人诚恳，思想积极向上;工作严谨细致、条理分析有计划;工作重效率、责任心强、处事冷静。</p>
         </div>
     </div>
 </div>
 </body>
-
-<script src="psw.js"></script><!--密码定义在 psw.js 里面-->
 <script>
-
-    function loopy() {
-        var sWord = "";
-        while (sWord != "login") {
-            sWord = prompt("请输入你的登录密码");
-            alert("登陆成功!");
-        }
-        loopy();
-    }
 </script>
 </html>
