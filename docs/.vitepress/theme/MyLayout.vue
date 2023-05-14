@@ -25,13 +25,17 @@
   </Layout>
 
   <CopyWright/>
-  <MouseEvent/>
+
+
+  <div v-if="!mouseDisplay">
+    <MouseEvent/>
+  </div>
 </template>
 <script lang="ts" setup>
 
 import DefaultTheme from "vitepress/theme";
 
-const {Layout} = DefaultTheme;
+
 import HomeHero from "./components/layout/HomeHero.vue";
 import CopyWright from "./components/layout/CopyWright.vue";
 import Comments from "./components/plugin/Comments.vue";
@@ -40,5 +44,9 @@ import Category from "./components/Category.vue";
 import Title from "./components/layout/Title.vue";
 import MouseEvent from "./components/effect/MouseEvent.vue";
 
+// 在电脑上才显示
+const mouseDisplay = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)
+
+const {Layout} = DefaultTheme;
 </script>
 <style scoped></style>

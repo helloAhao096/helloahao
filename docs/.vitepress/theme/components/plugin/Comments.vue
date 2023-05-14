@@ -22,7 +22,6 @@ const gitalk = new Gitalk({
 
 
 onMounted(() => {
-  console.log(location.pathname.substring(0, 50))
   gitalk.render("gitalk-container");
 });
 </script>

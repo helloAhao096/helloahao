@@ -6,10 +6,16 @@
     <p class="description">
       这是我的个人博客
     </p>
+
+<!--    <Binary/>-->
+<!--    <iframe class="binary" src="./binary/binary.html"  frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>-->
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script setup lang="ts">
+import Binary from "../component/Binary.vue";
+
+</script>
 <style scoped>
 .shareCard {
   display: flex;

@@ -12,19 +12,22 @@
     "gray-matter": "^4.0.3",
     "lottie-web": "^5.10.0",
     "markdown-it": "^13.0.1",
+    "sass": "^1.62.1",
     "vitepress": "1.0.0-alpha.45"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "sass:watch ": "node-sass --watch docs/public/binary/style.scss docs/public/binary/style.css",
+    "sass:watch1 ": "node-sass --watch docs/public/binary1/style.scss docs/public/binary1/style.css"
   },
-
-"dependencies": {
+  "dependencies": {
     "busuanzi.pure.js": "^1.0.3",
     "cursor-effects": "^1.0.11",
     "dayjs": "^1.11.7",
     "gitalk": "^1.8.0",
+    "node-sass": "^8.0.0",
     "pinia": "^2.0.33"
   }
 }
