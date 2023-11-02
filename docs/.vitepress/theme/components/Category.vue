@@ -42,21 +42,30 @@ const headers = pageData.page.value.headers;
 ul {
   list-style-type: none;
 }
-@media (min-width: 768px) {
+
+@media (max-width: 480px) {
   .category {
     max-height: 400px;
     margin-bottom: 1rem;
 
   }
 }
-@media (min-width: 1024px) {
+
+@media (max-width: 768px) {
+  .category {
+    max-height: 400px;
+    margin-bottom: 1rem;
+
+  }
+}
+@media (max-width: 1024px) {
   .category {
     max-height: 450px;
     margin-bottom: 1rem;
 
   }
 }
-@media (min-width: 1400px) {
+@media (max-width: 1400px) {
   .category {
     /*position: fixed;*/
     /*right: 20px;*/
