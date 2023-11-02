@@ -26,10 +26,7 @@
 
   <CopyWright/>
 
-
-  <div v-if="!mouseDisplay">
-    <MouseEvent/>
-  </div>
+    <MouseEvent v-if="!mouseDisplay"/>
 </template>
 <script lang="ts" setup>
 

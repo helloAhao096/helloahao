@@ -1,11 +1,12 @@
 import {getPosts, getPostLength} from "./theme/serverUtils";
 // import {buildBlogRSS} from "./theme/rss";
 
+
 async function config() {
     return {
         lang: "en-US",
         title: "Ahao",
-        base:"/helloahao/",
+        base:"/",
         description: "Home of Ahao",
         appearance: 'dark',
         // editLinks: true,

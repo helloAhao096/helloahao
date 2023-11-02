@@ -1,10 +1,11 @@
 {
-  "name": "vite-press-blog",
+  "name": "vitepress-blog-ahao",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Ahao <helloahao@icloud.com>",
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "^10.4.14",
     "fast-glob": "^3.2.12",
     "feed": "^4.2.2",
     "fs-extra": "^11.1.0",
@@ -18,9 +19,7 @@
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs",
-    "sass:watch ": "node-sass --watch docs/public/binary/style.scss docs/public/binary/style.css",
-    "sass:watch1 ": "node-sass --watch docs/public/binary1/style.scss docs/public/binary1/style.css"
+    "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
     "busuanzi.pure.js": "^1.0.3",

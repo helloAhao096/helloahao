@@ -4,6 +4,8 @@ node_modules/
 # Dist files
 dist/
 lib/
+package-lock.json
+/docs/.vitepress/cache
 
 # Test coverage files
 
