@@ -15,7 +15,8 @@ const gitalk = new Gitalk({
   repo: "blog-comments",
   owner: "helloAhao096", //github仓库用户名
   admin: ["helloAhao096"], // 可以初始化插件的用户
-  id: location.pathname.substring(0, 50), // Ensure uniqueness and length less than 50
+  // id: location.pathname.substring(0, 50), // Ensure uniqueness and length less than 50
+  id: "helloAhao096", // Ensure uniqueness and length less than 50
   language: "zh-CN",
   distractionFreeMode: true, // Facebook-like distraction free mode
 });

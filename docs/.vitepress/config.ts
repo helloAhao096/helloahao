@@ -12,7 +12,7 @@ async function config() {
         // editLinks: true,
         // SEO优化配置  配置 网页 head 标签
         head: [
-            ["link", {rel: "icon", type: "image/svg", href: "/horse.svg",},],
+            ["link", {rel: "icon", type: "image/svg", href: "/helloahao/horse.svg",},],
             ['meta', {name: 'referrer', content: 'no-referrer-when-downgrade'}],
             ["meta", {name: "author", content: "Ahao",},],
             ["meta", {property: "og:title", content: "Home",},],

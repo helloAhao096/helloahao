@@ -26,7 +26,8 @@
 
   <CopyWright/>
 
-    <MouseEvent v-if="!mouseDisplay"/>
+    <MouseEvent/>
+<!--    <MouseEvent />-->
 </template>
 <script lang="ts" setup>
 
@@ -40,9 +41,6 @@ import Page from "./components/layout/Page.vue";
 import Category from "./components/Category.vue";
 import Title from "./components/layout/Title.vue";
 import MouseEvent from "./components/effect/MouseEvent.vue";
-
-// 在电脑上才显示
-const mouseDisplay = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)
 
 const {Layout} = DefaultTheme;
 </script>
