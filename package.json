@@ -4,6 +4,7 @@
   "main": "index.js",
   "author": "Ahao <helloahao@icloud.com>",
   "license": "MIT",
+  "msvs_version": "2022",
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "fast-glob": "^3.2.12",
@@ -26,7 +27,6 @@
     "cursor-effects": "^1.0.11",
     "dayjs": "^1.11.7",
     "gitalk": "^1.8.0",
-    "node-sass": "^8.0.0",
     "pinia": "^2.0.33"
   }
 }
