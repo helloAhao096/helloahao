@@ -23,7 +23,7 @@ tags:
 
     如果是有线连接一般就是eth0,wifi就是wlan0
    
-   注（大坑）： wifi网络和以太网网络要配置的网络模式不一样，网络上的文章都基本只说了以太网（网线）模式
+   **注(大坑): wifi网络和以太网网络要配置的网络模式不一样，网络上的文章都基本只说了以太网（网线）模式**
 
 
     ```shell
@@ -34,7 +34,7 @@ tags:
     ```shell
     sudo nano /etc/netplan/01-netcfg.yaml
     ```
-   以太网模式(ethernets):
+   ## 以太网模式(ethernets):
     ```shell
       network:
       version: 2
@@ -54,7 +54,7 @@ tags:
             addresses: [ 192.168.52.1 , 114.114.114.114 ]
           optional: true
     ```
-   WIFI模式(wifis):
+   ## WIFI模式(wifis):
    ```shell
    network:
      version: 2
