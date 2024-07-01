@@ -6,6 +6,9 @@
     <p class="description">
       这是我的个人博客
     </p>
+    <p class="email">
+      helloahao@icloud.com
+    </p>
 
 <!--    <Modal button-text="AHAO"></Modal>-->
 <!--    <Binary/>-->
