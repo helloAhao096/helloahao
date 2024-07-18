@@ -8,7 +8,7 @@ tags:
 ---
 
 >  参考资料:
-> https://www.cnblogs.com/my-blogs-for-everone/p/10226473.html
+>  https://www.cnblogs.com/my-blogs-for-everone/p/10226473.html
 >  https://ken.io/note/macos-postgresql-install-and-configuration
 
 # mac 命令
