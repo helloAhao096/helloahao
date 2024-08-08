@@ -74,7 +74,7 @@ body {
 }
 
 .resume-name {
-    margin-bottom: 1rem;
+    /*margin-bottom: 1rem;*/
 }
 
 .resume-contact {
@@ -114,9 +114,30 @@ ul {
     /*margin: 1rem;*/
 }
 ol {
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 
 .resume-skill > ul {
     margin-left: 2rem;
+}
+
+.school {
+    display: flex;
+    justify-content: space-between;
+}
+
+.horizontal-line-print {
+    width: 85%;
+    border-top: 1px solid #000;
+    margin: 10px 0;
+}
+
+@media print {
+    .horizontal-line-print {
+        flex: 1;
+        /* 设置分割线的宽度 */
+        height: 1px; /* 设置分割线的高度 */
+        background-color: #000; /* 设置分割线的颜色 */
+        margin: 10px; /* 设置上下外边距 */
+    }
 }
