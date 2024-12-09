@@ -7,25 +7,31 @@ tags:
 - ubuntu
 ---
 
+## Docker 自动安装部署脚本
 
-# Docker镜像配置
+https://linuxmirrors.cn/other/#docker-%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC
 
-## 国内源
+```shell
+# 三条url命令都是使用sh脚本部署docker，在所需的环境执行和运行后，即可自动化安装docker，并且配置镜像源
+# 具体命令和参数参考上面的 linuxmirrors 的文档
+
+bash <(curl -sSL https://linuxmirrors.cn/docker.sh) # 推荐
+bash <(curl -sSL https://raw.githubusercontent.com/SuperManito/LinuxMirrors/main/DockerInstallation.sh)
+bash <(curl -sSL https://gitee.com/SuperManito/LinuxMirrors/raw/main/DockerInstallation.sh)
+
+```
+## Docker 手动更换镜像源
 
 https://github.com/tech-shrimp/docker_installer
 
 
-# Ubuntu
-## ubuntu系统 apt source-list
+## linux 
+GNU/Linux 更换系统软件源脚本
 
-> 给docker配置完国内镜像地址之后，如果需要FROM一些linux操作系统，则有时也会需要用到apt等包管理工具，但是source是从官方镜像拉取的，在国内更新安装包也特别慢
-> 配置在/etc/apt/sources.list
+```shell
+bash <(curl -sSL https://linuxmirrors.cn/main.sh)
 
-ubuntu(x86)和ubuntu ports(arm)是不同的系统镜像，在配置镜像源的时候一定要区分运行ubuntu的设备是x86还是arm
-
-## 阿里巴巴镜像源
-https://developer.aliyun.com/mirror/
-https://developer.aliyun.com/mirror/ubuntu/
+```
 
 
 # python
@@ -109,17 +115,21 @@ RUN pip3 install --no-cache-dir \
 # 复制整个项目到容器内
 COPY data_forwarding /data_forwarding
 
-# 暴露容器的端口（HTTP 和 UDP）
-EXPOSE 8000 8002
-
 # 设置启动命令
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
 
 
 ```
 
-# pip
-## 设置docker中的pip源
+## 设置pip源
 
-临时设置源
-RUN pip install --no-cache-dir --index-url https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt
+### 临时设置源
+pip install --no-cache-dir --index-url https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt
+
+### 设置全局源
+pip3 config set global.index-url https://mirrors.aliyun.com/pypi/simple/
+
+
+##  文档参考地址
+
+> https://linuxmirrors.cn/
