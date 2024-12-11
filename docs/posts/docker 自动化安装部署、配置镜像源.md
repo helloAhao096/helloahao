@@ -1,6 +1,6 @@
 ---
-title: docker中国镜像源、ubuntu apt source-list
-description: docker中国镜像源、ubuntu apt source-list
+title: docker 自动化安装部署、配置镜像源
+description: docker 自动化安装部署、配置镜像源
 date: 2024-11-18
 tags:
 - docker
